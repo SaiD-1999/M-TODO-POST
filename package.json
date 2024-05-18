@@ -1,0 +1,28 @@
+{
+  "name": "m-todo-post",
+  "version": "1.0.0",
+  "description": "WEB APP MÉTODO POST",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaiD-1999/M-TODO-POST.git"
+  },
+  "keywords": [
+    "POST",
+    "HTTP"
+  ],
+  "author": "Hugo Dias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaiD-1999/M-TODO-POST/issues"
+  },
+  "homepage": "https://github.com/SaiD-1999/M-TODO-POST#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
