@@ -11,12 +11,17 @@
 
 <body>
     <h1 class="text-center mt-3">Cadastro De Fornecedores</h1><br><br>
-    <div class="container">
+    <div class="container mb-5">
         <form method="POST" action='/cadastrar' class=" border row g-2">
             <div class="mb-3">
-                <label for="nome" class="form-label">Nome da Empresa:</label><br>
+                <label for="razao" class="form-label">Razão Social:</label><br>
+                <input type="text" class="form-control" id="razao" name="razao" 
+                    placeholder="Razão social">
+            </div>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome Fantasia:</label><br>
                 <input type="text" class="form-control" id="nome" name="nome" 
-                    placeholder="Nome da empresa">
+                    placeholder="Nome Fantasia">
             </div>
             <div class="mb-3">
                 <label for="cnpj" class="form-label">CNPJ:</label><br>
@@ -24,17 +29,65 @@
                 placeholder="CNPJ">
             </div>
             <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço:</label><br>
+                <input type="text" class="form-control" id="endereco" name="endereco" 
+                    placeholder="Rua,Nº,Bairro">
+            </div>
+            <div class="col-md-5">
+                <label for="cidade" class="form-label">Cidade:</label><br>
+                <input type="text" class="form-control" id="cidade" name="cidade" 
+                    placeholder="Cidade">
+            </div>
+            <div class="col-md-3">
+                <label for="estado" class="form-label">UF</label><br>
+                <select type="text" class="form-select" id="estado" name="estado">
+                    <option selected disabled value="">Escolha um estado...</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="cep" class="form-label">CEP:</label><br>
+                <input type="text" class="form-control" id="cep" name="cep" 
+                    placeholder="CEP">
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">E-mail:</label><br>
+                <input type="text" class="form-control" id="email" name="email" 
+                    placeholder="E-mail">
+            </div>
+            <div class="col-md-4">
                 <label for="telefone" class="form-label">Telefone:</label><br>
                 <input type="text" class="form-control" id="telefone" name="telefone" 
-                    placeholder="Telefone">
-            </div>
-            <div class="mb-3">
-                <label for="produto" class="form-label">Produto:</label><br>
-                <input type="text" class="form-control" id="Produto" name="produto" 
-                    placeholder="Produto">
+                    placeholder="(99)99999-9999">
             </div>
             <div class="text-center">
-            <div class="col-12 mb-3">
+            <div class="col-12 mb-3 mt-3">
                 <button class="btn btn-primary" type="submit">Cadastrar</button>
                 <a class="btn btn-secondary" href="/">Voltar</a>
               </div>
